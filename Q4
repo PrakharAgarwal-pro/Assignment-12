@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+class Box {
+public:
+    int length, breadth, height;
+
+    Box() {
+        length = breadth = height = 1;
+    }
+
+    Box(int val) {
+        length = breadth = height = val;
+    }
+
+    Box(int l, int b, int h) {
+        length = l;
+        breadth = b;
+        height = h;
+    }
+
+    void displayVolume() {
+        cout << "Volume: " << length * breadth * height << endl;
+    }
+};
+
+int main() {
+    Box box1;
+    box1.displayVolume();
+
+    Box box2(3);
+    box2.displayVolume();
+
+    Box box3(2, 4, 5);
+    box3.displayVolume();
+
+    return 0;
+}
