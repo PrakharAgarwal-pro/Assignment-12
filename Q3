@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+using namespace std;
+class car{
+    public:
+    string brand;
+    int price;
+    
+    void initia(string b, int p){
+        brand =b;
+        price = p;
+        cout << brand << endl;
+        cout << price << endl;
+    }
+};
+
+int main() {
+    car c1;
+    c1.initia("Ferrari",300000);
+    
+    car c2;
+    c2.initia("Lamborghini",500000);
+    return 0;
+}
