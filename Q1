@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+class Rectangle {
+    public:
+        int length;
+        int breadth;
+
+        Rectangle(){
+            length = breadth = 1;
+        }
+
+        Rectangle(int l,int b){
+            length =l;
+            breadth =b;
+        }
+
+        int Area(){
+            int area=length*breadth;
+            cout << "Area : " << area;
+            return area;
+        }
+    };
+
+int main() {
+    Rectangle r;
+    cout << "Area of Default Rectangle : ";
+    r.Area();
+    cout<<endl;
+
+    int l,b;
+    cout << "Enter length and breadth : \n";
+    cin >> l >> b;
+    Rectangle rect(l, b);
+    cout <<"Area of parameterized rectangle : ";
+    rect.Area();
+
+    return 0;
+}
