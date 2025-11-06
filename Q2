@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+class Complex {
+public:
+    int real, imaginary;
+
+   
+    Complex() {
+        real = 0;
+        imaginary = 0;
+    }
+
+    
+    Complex(int r, int i) {
+        real = r;
+        imaginary = i;
+    }
+
+    
+    void display() {
+        cout << real << " + i" << imaginary << endl;
+    }
+};
+
+int main() {
+   
+    Complex c1;
+    c1.display();
+
+ 
+    Complex c2(2, 0);
+    c2.display();
+    
+    Complex c3(2, 3);
+    c3.display();
+
+    return 0;
+}
